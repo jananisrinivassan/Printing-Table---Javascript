@@ -1,0 +1,21 @@
+<html>
+<head>
+<title> Multiplication Table</title>
+</head>
+<body>
+    <script language="JavaScript">
+        const userInput = prompt("Enter a number for the multiplication table:");
+        const number = parseFloat(userInput);           
+           function displayMultiplicationTable(value) 
+           {
+                let table = "Multiplication Table for " + value + ":\n";
+
+                for (let i = 1; i <= 10; i++) {
+                    table += `${value} x ${i} = ${value * i}\n`;
+                }
+                alert(table);
+            }           
+            displayMultiplicationTable(number);
+    </script>
+</body>
+</html>
